@@ -6,7 +6,7 @@ const express = require('express');
 const router = express.Router();
 const { getFirestore, isDemo } = require('../config/firebase');
 const { authMiddleware } = require('../middleware/auth');
-const { COLLECTIONS, USER_ROLES } = require('../../shared/types');
+const { COLLECTIONS, USER_ROLES } = require('../shared/types');
 const demoStore = require('../demoStore');
 
 /**

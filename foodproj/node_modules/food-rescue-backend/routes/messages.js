@@ -3,7 +3,7 @@ const router = express.Router();
 
 const { getFirestore, isDemo } = require('../config/firebase');
 const { authMiddleware } = require('../middleware/auth');
-const { COLLECTIONS, MESSAGE_TYPE } = require('../../shared/types');
+const { COLLECTIONS, MESSAGE_TYPE } = require('../shared/types');
 const demoStore = require('../demoStore');
 
 function normalizeMessage(docOrObj) {

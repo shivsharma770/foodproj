@@ -7,7 +7,7 @@ const router = express.Router();
 const ExcelJS = require('exceljs');
 const { getFirestore, isDemo } = require('../config/firebase');
 const { authMiddleware } = require('../middleware/auth');
-const { COLLECTIONS, USER_ROLES, OFFER_STATUS } = require('../../shared/types');
+const { COLLECTIONS, USER_ROLES, OFFER_STATUS } = require('../shared/types');
 const demoStore = require('../demoStore');
 
 /**

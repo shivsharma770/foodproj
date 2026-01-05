@@ -4,8 +4,8 @@ const crypto = require('crypto');
 
 const { getFirestore, isDemo } = require('../config/firebase');
 const { authMiddleware } = require('../middleware/auth');
-const { COLLECTIONS, USER_ROLES, USER_STATUS } = require('../../shared/types');
-const { isValidPhone } = require('../../shared/validation');
+const { COLLECTIONS, USER_ROLES, USER_STATUS } = require('../shared/types');
+const { isValidPhone } = require('../shared/validation');
 const demoStore = require('../demoStore');
 
 // Helper to hash passwords
