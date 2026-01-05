@@ -64,6 +64,16 @@ app.get('/health', (req, res) => {
   });
 });
 
+// Root route (helps with Railway "service is up" checks and manual visits)
+app.get('/', (req, res) => {
+  res.json({
+    name: 'Food Rescue Platform API',
+    status: 'ok',
+    health: '/health',
+    demo: isDemo()
+  });
+});
+
 // Routes
 const authRoutes = require('./routes/auth');
 const foodOffersRoutes = require('./routes/foodOffers');
